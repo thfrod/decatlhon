@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="content">
+    <div class="table">
+      <div class="column-table modality">
+        <div class="column-table--td">Modalidade</div>
+        <div class="column-table--td" *ngFor="let modality of modalitys">
+          {{ modality }}
+        </div>
+      </div>
+      <div class="column-table" *ngFor="let athlete of athletes; index as i">
+        <div class="column-table--td athlete">
+          {{ athlete.split(" ")[0] }}<br />{{ athlete.split(" ")[1] }}
+        </div>
+        <td class="column-table--td" *ngFor="let results of athletesResults[i]">
+          {{ results }}
+        </td>
+      </div>
+    </div>
+    <div class="button" (click)="exportCSV()">Exportar dados</div>
+  </div>
+</div>

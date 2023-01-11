@@ -1,0 +1,44 @@
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+.table {
+  display: flex;
+  /* gap: 1rem; */
+  background-color: #202528;
+  color: #f6f6f9;
+  width: fit-content;
+  padding: 0 1rem;
+  border-radius: 4px;
+}
+.column-table {
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #f6f6f950;
+  text-align: center;
+  padding: 0.5rem;
+  justify-content: end;
+}
+.column-table:first-child {
+  border: none;
+}
+
+.column-table.modality {
+  /* text-align: left; */
+  font-weight: 600;
+}
+.column-table--td.athlete {
+  font-weight: 600;
+}
+
+.column-table--td {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f6f6f950;
+}
+.column-table--td:last-child {
+  border: none;
+}

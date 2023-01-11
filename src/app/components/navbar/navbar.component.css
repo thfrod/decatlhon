@@ -1,0 +1,14 @@
+nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: #202528;
+  padding: 1rem;
+}
+nav a {
+  color: #f6f6f9;
+  text-decoration: none;
+}
+img {
+  width: 50px;
+}
